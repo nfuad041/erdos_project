@@ -26,3 +26,5 @@ The main company key performance indicators (KPIs) are,
 2. Root mean-squared error (RMSE)
 
 3. R-squared for the variance
+
+We perfrom initial baseline forcesting by implementing a Gaussian white noise model, Gaussian random walk model and simple exponential smoothing. We also evaluate the performance of the respective forecasts using average cross-validation root mean-squared error. Preliminary calculations show that naive forecasts perform better. Autocorrelation plots of the first differences do not show any particular trend or seasonality in the time-series data. So we perform an ARIMA calculation on the training data that gives the optimal values of (p,d,q) based on minimum AIC. Again using RMSE as the performance metric we see that ARIMA performs as good as the naive forecast.
