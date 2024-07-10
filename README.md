@@ -1,5 +1,7 @@
 # Stock market modeling and forecasting
 
+**Team members**: Suman Aich, Nafis Fuad, Siu Cheung Lam, Xiaoyu Wang
+
 **Objective**: We perform stock market analysis using data from multiple stocks (including index funds and companies). Our approach is based on both statistical modeling and LSTM neural networks. For statistical modeling we use autocorrelation plots to examine trends in data and  root mean squared error (RMSE) as our key performance indicator. Using the LSTM neural network we design a regression model for forecasting and a classifier to predict whether to buy, hold or sell stocks at any given day. Finally, we explore the LSTM regression model’s ability to generalize to multiple stocks, as well as its usage for multi-day forecasting.
 
 **Statistical modeling**: We perform statistical modeling based on Gaussian rolling averages, naive forecasts, simple exponential smoothing and ARIMA. We evaluate their performance using RMSE. We use historical stock data and split it into training and test datasets with the test data being the final day. We also preprocess the data using min-max scaler because data from the 1980s and 2020s have drastic differences in mean and variance. We find that naive forecasts, simple exponential smoothing and ARIMA perform equally good and far better than Gaussian rolling average based on RMSE values and we also confirm that by plotting the training, test and predicted data from all the models for the last month. 
